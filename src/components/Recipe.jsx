@@ -19,17 +19,17 @@ export default function Recipe() {
         recipeArray.map((element) => {
             return(
                 <div className="RecipeBox" key={element.id}>
-                    <div className="RecipeBox-Img">
-                        <img src={element.image} alt="RecipeImg" />
-                    </div>
+                    
+                    <img className="RecipeBox-Img" src={element.image} alt="RecipeImg" />
+                    
                     <div className="RecipeBox-Txt">
                         <h2>{element.name}</h2>
-                        <p>Calories : {element.calories}</p>
-                        <p>Servings : {element.servings}</p>
+                        <p><b>Calories:</b> {element.calories}</p>
+                        <p><b>Servings:</b> {element.servings}</p>
                     </div>
-                    <div className="RecipeBox-Btn-Delete">
-                        <button onClick={() => deleteRecipe(element.id)}>Delete</button>
-                    </div>
+
+                    <button className="RecipeBox-Btn-Delete" onClick={() => deleteRecipe(element.id)}>Delete</button>
+
                 </div>
             )
         })
