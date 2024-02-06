@@ -5,18 +5,27 @@ import Footer from './components/Footer';
 import Sidebar from './components/Sidebar';
 import Content from './components/Content';
 
+import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
+
+
+
 
 function App() {
 
   return (
-    <div>
-      <Header />
+    <>
+    <Header />
       <div className="main">
         <Sidebar />
         <Content />
       </div>
-      <Footer />
-    </div>
+    <Footer />
+
+
+
+
+    </>
   )
 }
 

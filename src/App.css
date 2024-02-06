@@ -6,10 +6,13 @@
   margin: 0;
   padding: 0;
   color: #181716;
+
+  
 }
 
 body {
   font-family: 'Open Sans', sans-serif;
+  background-color: #F57530;
 }
 
 
@@ -30,7 +33,6 @@ body {
   width: 100%;
   padding-top: 12vh;
   display: flex;
-  background-color: #F57530;
 
 }
 
@@ -121,6 +123,23 @@ body {
   overflow: hidden;
 }
 
+.AboutPage {
+
+  align-self: center;
+  border: 1px solid #dddddd;
+  margin: 20px;
+  height: 20vh;
+  width: 80%;
+  background-color: #fffefc;
+  box-shadow: 3px 3px 5px 1px #9E4039;
+  display: flex;
+  border-radius: 10px;
+  padding: 0 30px;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+
+}
 
 .RecipeBox-Img {
 
