@@ -24,8 +24,10 @@ export default function Recipe() {
                     
                     <div className="RecipeBox-Txt">
                         <h2>{element.name}</h2>
+                        <div>
                         <p><b>Calories:</b> {element.calories}</p>
                         <p><b>Servings:</b> {element.servings}</p>
+                        </div>
                     </div>
 
                     <button className="RecipeBox-Btn-Delete" onClick={() => deleteRecipe(element.id)}>Delete</button>

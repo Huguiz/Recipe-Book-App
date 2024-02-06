@@ -1,13 +1,14 @@
 import menuBtn from "../assets/menu-icon.png";
 import appLogo from "../assets/app-logo.png";
 
-function Header() {
+function Header({menuToggle}) {
     return (
         <div className="top">
-            <img src={menuBtn} alt="menuBtn" className="menuBtn"/>
+
+            <button className="menuBtn" onClick={menuToggle}><img src={menuBtn} alt="menuBtn"/></button>
             <img src={appLogo} alt="appLogo" className="appLogo"/>
         </div>
     )
 }
 
-export default Header
+export default Header;

@@ -1,8 +1,11 @@
+import {useState} from 'react';
 import {Link} from 'react-router-dom';
 
-function Sidebar () {
+
+function Sidebar ({toggle}) {
+
     return (
-        <div className="Sidebar">
+        <div className={Sidebar + ` ` + (toggle ? `hidden`:``)}>
             <menu>
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/about">About</Link></li>

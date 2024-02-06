@@ -19,13 +19,33 @@ body {
 .top {
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   background-color: #F55331;
-  width: 100%;
   padding: 1vh;
   height:9vh;
+  align-items: center;
 
   box-shadow: 3px 3px 5px 1px #9E4039;
+}
+
+
+
+.menuBtn {
+  height: 50%;
+  margin-left: 30px;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid #F57530;
+  box-shadow: 3px 3px 5px 1px #9E4039;
+}
+
+.appLogo {
+  margin: auto;
+  height: 100%;
+  filter: invert(1);
+
 }
 
 .main {
@@ -36,24 +56,13 @@ body {
 
 }
 
-.menuBtn {
-  margin: auto 0 auto 30px;
-  height: 50%;
-}
-
-.appLogo {
-  height: 100%;
-  margin: auto;
-  align-self: center;
-  filter: invert(1);
-}
-
 .Sidebar {
 
   position: fixed;
   width: 15%;
   height: 80vh;
   margin-top: 1vh;
+  transition: all .5s linear;
 
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -61,6 +70,7 @@ body {
   box-shadow: 3px 3px 5px 1px #9E4039;
 
   background-color: #fffefc;
+  transition: all .25s linear;
 
 }
 
@@ -80,11 +90,11 @@ body {
 
 .Content {
 
-  padding-left: 15vh;
   display: flex;
   flex-direction: column;
   width: 100%;
   min-width: 85%;
+  transition: all .25s linear;
 
 }
 
@@ -110,15 +120,15 @@ body {
 .RecipeBox {
   align-self: center;
   border: 1px solid #dddddd;
-  margin: 20px;
+  margin: 15px;
   height: 20vh;
-  width: 80%;
+  width: 70%;
   background-color: #fffefc;
   box-shadow: 3px 3px 5px 1px #9E4039;
   display: flex;
   border-radius: 10px;
   padding: 0 30px;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   overflow: hidden;
 }
@@ -144,13 +154,15 @@ body {
 .RecipeBox-Img {
 
   border-radius: 5px;
-  width: 35%;
+  width: 30%;
 }
 
 .RecipeBox-Txt {
   display: flex;
+  height: 100%;
+  width: 30%;
   flex-direction: column;
-  line-height: 15px;
+  justify-content: center;
 }
 
 .RecipeBox-Txt h2 {
@@ -168,4 +180,13 @@ body {
   border-radius: 0.5em;
   font-size: 1.2em;
   padding: 10px;
+}
+
+.hidden {
+  margin-left: -17%;
+  overflow: hidden;
+}
+
+.Content-toggle {
+  padding-left: 15vh;
 }

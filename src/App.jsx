@@ -1,24 +1,29 @@
 import './App.css'
 
+import {useState} from 'react';
+
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Sidebar from './components/Sidebar';
 import Content from './components/Content';
 
-import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
-
-
 
 
 function App() {
 
+    const [toggle, setToggle] = useState(true);
+
+    const menuToggle = () => {
+        setToggle(!toggle);
+    }
+
   return (
     <>
-    <Header />
+    <Header menuToggle={menuToggle}/>
       <div className="main">
-        <Sidebar />
-        <Content />
+        <Sidebar toggle={toggle}/>
+        <Content toggle={toggle}/>
       </div>
     <Footer />
 

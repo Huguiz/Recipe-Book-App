@@ -3,10 +3,12 @@ import {Routes, Route} from 'react-router-dom';
 import Recipe from "./Recipe";
 import AboutPage from '../pages/AboutPage';
 
-function Content () {
+function Content ({toggle}) {
+
     return(
+        
         <>
-        <div className="Content">
+        <div className={Content + ` ` + (toggle ? ``:`Content-toggle`)}>
 
             <Routes>
                 
