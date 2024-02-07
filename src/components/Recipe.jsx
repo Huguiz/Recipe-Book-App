@@ -3,7 +3,7 @@ import '../App.css'
 import RecipesList from "../assets/recipies.json"
 import { useState } from "react";
 import { Link } from "react-router-dom"
-import RecipeDetail from "../pages/Recipedetail";
+import RecipeDetail from "../pages/RecipeDetail";
 
 export default function Recipe() {
 

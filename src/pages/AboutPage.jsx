@@ -5,7 +5,7 @@ import linkedinIcon from '../assets/linkedin.png';
 
 function AboutPage () {
 	return (
-<<<<<<< HEAD
+
 
 		<div className="team-container">
 
@@ -28,11 +28,10 @@ function AboutPage () {
 				)
 		})}
 
-=======
-		<div className="AboutPage">
-		<p>Info about Alastair and Hugo will go here.</p>
->>>>>>> 35414125a880be0ea347c68a7f34de96f73659b7
 		</div>
+
+
+		
 	)
 }
 export default AboutPage;
