@@ -6,8 +6,6 @@
   margin: 0;
   padding: 0;
   color: #181716;
-
-  
 }
 
 body {
@@ -26,14 +24,13 @@ body {
   padding: 1vh;
   height:9vh;
   align-items: center;
-
   box-shadow: 3px 3px 5px 1px #9E4039;
 }
 
 
 
 .menuBtn {
-  height: 50%;
+  height: 70%;
   margin-left: 1vw;
   background-color: transparent;
   border-radius: 10px;
@@ -45,19 +42,15 @@ body {
   margin: auto 43vw;
   height: 100%;
   filter: invert(1);
-
 }
 
 .main {
-
   width: 100%;
   padding-top: 12vh;
   display: flex;
-
 }
 
 .Sidebar {
-
   position: fixed;
   width: 15%;
   height: 80vh;
@@ -71,11 +64,9 @@ body {
 
   background-color: #fffefc;
   transition: all .25s linear;
-
 }
 
 .Sidebar menu {
-
   text-align: center;
   padding: 0 3.5%;
   font-size: 1.4em;
@@ -89,13 +80,10 @@ body {
 }
 
 .Content {
-
-  display: flex;
-  flex-direction: column;
   width: 100%;
   min-width: 85%;
   transition: all .25s linear;
-
+  margin-bottom: 60px;
 }
 
 .Footer {
@@ -126,7 +114,7 @@ body {
 .RecipeBox {
   align-self: center;
   border: 1px solid #dddddd;
-  margin: 15px;
+  margin: 35px auto;
   height: 20vh;
   width: 70%;
   background-color: #fffefc;
@@ -140,7 +128,6 @@ body {
 }
 
 .AboutPage {
-
   align-self: center;
   border: 1px solid #dddddd;
   margin: 20px;
@@ -150,17 +137,18 @@ body {
   box-shadow: 3px 3px 5px 1px #9E4039;
   display: flex;
   border-radius: 10px;
-  padding: 0 30px;
+  padding: 0 20px;
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
-
 }
 
 .RecipeBox-Img {
-
   border-radius: 5px;
   width: 20%;
+  height: 90%;
+  border: 1px solid black;
+  box-shadow: 2px 2px 10px 1px #1b1817;
 }
 
 .RecipeBox-Txt {
@@ -173,6 +161,8 @@ body {
 
 .RecipeBox-Txt h2 {
   font-weight: 600;
+  color: black;
+  font-size: 2em;
 }
 
 .RecipeBox-Txt h2, p{
@@ -197,6 +187,7 @@ body {
   padding-left: 15vh;
 }
 
+<<<<<<< HEAD
 .team-container {
   display: flex;
   justify-content: center;
@@ -232,4 +223,53 @@ body {
   margin: 2vw;
   height: 5vh;
   filter: invert(1);
+=======
+.RecipeBox a {
+  height: 95%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+}
+
+.RecipeDetail {
+  align-self: center;
+  border: 1px solid #dddddd;
+  margin: 35px auto;
+  height: 50vh;
+  width: 70%;
+  background-color: #fffefc;
+  box-shadow: 3px 3px 5px 1px #9E4039;
+  display: flex;
+  border-radius: 10px;
+  padding: 0 30px;
+  align-items: center;
+  overflow: hidden;
+}
+
+.RecipeDetail img {
+  height: 75%;
+}
+
+.RecipeDetail h2 {
+  text-align: start;
+  font-size: 1.9em;
+  text-decoration: underline;
+}
+
+.RecipeDetail button {
+  margin: auto 120px auto auto;
+  font-size: 1.5em;
+  background-color: rgb(137, 218, 32);
+  border: 0px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px 1px #525252;
+}
+
+.RecipeDetail-Txt {
+  height: 80%;
+  margin: 0 auto 0 30px;
+>>>>>>> 35414125a880be0ea347c68a7f34de96f73659b7
 }
