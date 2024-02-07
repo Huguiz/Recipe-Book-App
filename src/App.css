@@ -196,3 +196,40 @@ body {
 .Content-toggle {
   padding-left: 15vh;
 }
+
+.team-container {
+  display: flex;
+  justify-content: center;
+  
+  width: 100%;
+  height: 100%;
+}
+
+.team-card {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+
+  flex-basis:35%;
+
+  margin: 15px;
+  border: 1px solid #dddddd;
+
+
+  background-color: #fffefc;
+  box-shadow: 3px 3px 5px 1px #9E4039;
+  
+  border-radius: 10px;
+  align-items: center;
+}
+
+.team-card p {
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.site-icon {
+  margin: 2vw;
+  height: 5vh;
+  filter: invert(1);
+}
