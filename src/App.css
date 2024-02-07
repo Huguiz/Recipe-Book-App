@@ -34,7 +34,7 @@ body {
 
 .menuBtn {
   height: 50%;
-  margin-left: 30px;
+  margin-left: 1vw;
   background-color: transparent;
   border-radius: 10px;
   border: 1px solid #F57530;
@@ -42,7 +42,7 @@ body {
 }
 
 .appLogo {
-  margin: auto;
+  margin: auto 43vw;
   height: 100%;
   filter: invert(1);
 
@@ -99,15 +99,21 @@ body {
 }
 
 .Footer {
-  width: 100%;
   display: flex;
   justify-content: center;
+  align-content: center;
   position: fixed;
   bottom: 0;
-  height: 5vh;
+  left: 0;
+  right: 0;
+  height: 6vh;
   background-color:#F55331;
   box-shadow: 3px 3px 15px 1px #9E4039;
   color: #fffefc;;
+}
+
+.Footer p {
+  margin-top: 2vh;
 }
 
 .Footer a:link,
@@ -154,13 +160,13 @@ body {
 .RecipeBox-Img {
 
   border-radius: 5px;
-  width: 30%;
+  width: 20%;
 }
 
 .RecipeBox-Txt {
   display: flex;
   height: 100%;
-  width: 30%;
+  width: 20%;
   flex-direction: column;
   justify-content: center;
 }
