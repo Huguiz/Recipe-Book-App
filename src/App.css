@@ -187,7 +187,7 @@ body {
   padding-left: 15vh;
 }
 
-<<<<<<< HEAD
+
 .team-container {
   display: flex;
   justify-content: center;
@@ -223,7 +223,8 @@ body {
   margin: 2vw;
   height: 5vh;
   filter: invert(1);
-=======
+}
+
 .RecipeBox a {
   height: 95%;
   width: 100%;
@@ -271,5 +272,4 @@ body {
 .RecipeDetail-Txt {
   height: 80%;
   margin: 0 auto 0 30px;
->>>>>>> 35414125a880be0ea347c68a7f34de96f73659b7
 }
