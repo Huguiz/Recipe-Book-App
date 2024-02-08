@@ -7,7 +7,6 @@ import Footer from './components/Footer';
 import Sidebar from './components/Sidebar';
 import Content from './components/Content';
 
-
 function App() {
 
     const [toggle, setToggle] = useState(true);

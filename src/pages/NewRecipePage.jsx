@@ -1,5 +1,7 @@
 import '../App.css';
 import { useState } from 'react';
+import RecipeForm from '/src/components/RecipeForm';
+import { useNavigate } from 'react-router-dom';
 
 export default function NewRecipePage(props) {
 
@@ -7,6 +9,7 @@ export default function NewRecipePage(props) {
     const [image, setImage]= useState("");
     const [calories, setCalories]= useState(0);
     const [servings, setServings]= useState(1);
+    const navigate = useNavigate();
 
     function generateUuidv4() {
         return "10000000-1000-4000-8000-100000000000".replace(/[018]/g, c =>
@@ -15,6 +18,7 @@ export default function NewRecipePage(props) {
       }
 
     function addRecipe(e) {
+
         e.preventDefault();
 
         const newRecipeObj = {
@@ -26,45 +30,20 @@ export default function NewRecipePage(props) {
         }
         const newRecipeArray = [newRecipeObj, ...props.recipeArray]
         props.setRecipeArray(newRecipeArray);
+
+        alert(`Recipe added!`);
+
+        setName("");
+        setImage("");
+        setCalories(0);
+        setServings(1);
+
+        navigate("/");
+
     }
 
+ 
     return(
-        <div className="AddRecipeBox">
-            <form onSubmit={addRecipe}>
-                <h3>Add a recipe :</h3>
-                <div>
-                <label>
-                    Recipe name
-                    <input name="name" type="text" placeholder="Name" value={name} required={true} onChange={(e) => setName(e.target.value)} />
-                </label>
-
-                <label>
-                    Recipe Image
-                    <input name="image" type="url" placeholder="Recipe Image" value={image} required={true} onChange={(e) => setImage(e.target.value)} />
-                </label>
-
-                <label>
-                    Calories
-                    <input name="calories" type="number" placeholder="Calories" value={calories} required={true} onChange={(e) => setCalories(e.target.value)} />
-                </label>
-                <label>
-                    Servings
-                    <input
-                    name="servings"
-                    type="number"
-                    placeholder="Servings"
-                    minLength={1}
-                    maxLength={1}
-                    min={1}
-                    max={9}
-                    value={servings}
-                    required={true}
-                    onChange={(e) => setServings(e.target.value)} 
-                    />
-                </label>
-                <button type="submit">Add recipe</button>
-                </div>
-            </form>
-        </div>
+        <RecipeForm fn={addRecipe} name={name} setName={setName} image={image} setImage={setImage} calories={calories} setCalories={setCalories} servings={servings} setServings={setServings}/>
     )
 }
