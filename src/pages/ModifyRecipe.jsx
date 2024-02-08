@@ -53,7 +53,7 @@ function ModifyRecipe ({recipeArray, setRecipeArray}) {
 
 	return (
 
-			<RecipeForm fn={updateRecipe} name={name} setName={setName} image={image} setImage={setImage} calories={calories} setCalories={setCalories} servings={servings} setServings={setServings}/>
+			<RecipeForm fn={updateRecipe} name={name} setName={setName} image={image} setImage={setImage} calories={calories} setCalories={setCalories} servings={servings} setServings={setServings} action="Edit"/>
 
 		)
 
