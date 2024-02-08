@@ -250,7 +250,8 @@ body {
 }
 
 .RecipeDetail img {
-  height: 75%;
+  max-height: 75%;
+  max-width: 50%;
 }
 
 .RecipeDetail h2 {
@@ -272,4 +273,20 @@ body {
 .RecipeDetail-Txt {
   height: 80%;
   margin: 0 auto 0 30px;
+}
+
+.AddRecipeBox {
+  border: 1px solid #dddddd;
+  background-color: #fffefc;
+  margin: 20px auto;
+  width: 12%;
+  box-shadow: 3px 3px 5px 1px #9E4039;
+  border-radius: 10px;
+  padding: 30px 30px;
+  
+}
+
+.AddRecipeBox input {
+  display: block;
+  margin-bottom: 15px;
 }

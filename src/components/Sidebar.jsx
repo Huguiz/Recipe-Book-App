@@ -1,4 +1,3 @@
-import {useState} from 'react';
 import {Link} from 'react-router-dom';
 
 function Sidebar ({toggle}) {
@@ -6,6 +5,7 @@ function Sidebar ({toggle}) {
         <div className={Sidebar + ` ` + (toggle ? `hidden`:``)}>
             <menu>
                 <li><Link to="/">Home</Link></li>
+                <li><Link to="/newrecipe">Add a new recipe</Link></li>
                 <li><Link to="/about">About</Link></li>
             </menu>
         </div>

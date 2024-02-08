@@ -1,10 +1,9 @@
 import '../App.css';
-import RecipeList from '../assets/recipies.json'
 import { Link, useParams } from 'react-router-dom';
 
-function RecipeDetail () {
+function RecipeDetail (props) {
 	const recipeObj = useParams();
-	const recipeElm = RecipeList.find((element) => element.id == recipeObj.recipeID)
+	const recipeElm = props.recipeArray.find((element) => element.id == recipeObj.recipeID);
 
 	return (
 		<div className="RecipeDetail">

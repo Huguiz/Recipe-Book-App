@@ -7,8 +7,6 @@ import Footer from './components/Footer';
 import Sidebar from './components/Sidebar';
 import Content from './components/Content';
 
-import AboutPage from './pages/AboutPage';
-
 
 function App() {
 

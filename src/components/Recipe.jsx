@@ -1,23 +1,17 @@
 import React from "react";
 import '../App.css'
-import RecipesList from "../assets/recipies.json"
-import { useState } from "react";
 import { Link } from "react-router-dom"
-import RecipeDetail from "../pages/RecipeDetail";
 
-export default function Recipe() {
-
-    const [recipeArray, setRecipeArray] = useState(RecipesList)
-
+export default function Recipe(props) {
     function deleteRecipe(recipeID) {
-        const newRecipeArray = recipeArray.filter((recipe) => {
+        const newRecipeArray = props.recipeArray.filter((recipe) => {
             return recipe.id !== recipeID;
         })
-        setRecipeArray(newRecipeArray);
+        props.setRecipeArray(newRecipeArray);
     }
 
     return(
-        recipeArray.map((element) => {
+        props.recipeArray.map((element) => {
             return(
                 <div className="RecipeBox" key={element.id}>
                     <img className="RecipeBox-Img" src={element.image} alt="RecipeImg" />    
