@@ -4,6 +4,7 @@ import githubIcon from '../assets/github.png';
 import linkedinIcon from '../assets/linkedin.png';
 
 function AboutPage () {
+
 	return (
 
 
@@ -21,7 +22,7 @@ function AboutPage () {
 					<a href={member.github}><img className="site-icon" src={githubIcon} /></a>
 					<a href={member.linkedin}><img className="site-icon" src={linkedinIcon} /></a>
 					</div>
-
+					<img className="flag" src={`https://flagsapi.com/${member.origin}/flat/64.png`} />
 				</div>
 				
 

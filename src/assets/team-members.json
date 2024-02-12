@@ -3,12 +3,14 @@
 		"id": 1,
 		"name": "Alastair Longmuir",
 		"github": "https://github.com/alaslong",
-		"linkedin": "https://linkedin.com/in/alastairlongmuir"
+		"linkedin": "https://linkedin.com/in/alastairlongmuir",
+		"origin": "AU" 
 	},
 	{
 		"id": 2,
 		"name": "Hugo Maurin",
 		"github": "https://github.com/huguiz",
-		"linkedin": "https://linkedin.com/in/hugo-maurin"
+		"linkedin": "https://linkedin.com/in/hugo-maurin",
+		"origin": "FR"
 	}
 ]
