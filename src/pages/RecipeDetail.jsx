@@ -14,6 +14,7 @@ function RecipeDetail (props) {
 				<br />
 				<p>Calories : {recipeElm.calories}</p>
                 <p>Servings : {recipeElm.servings}</p>
+				{recipeElm.origin && <img src={`https://flagsapi.com/${recipeElm.origin}/shiny/64.png`}/>}
 			</div>
 			<Link to={`/modify/${recipeElm.id}`}>
 				<button>Edit</button>

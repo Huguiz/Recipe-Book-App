@@ -1,7 +1,7 @@
 import {useState} from 'react';
 import { useNavigate } from 'react-router-dom';
 
-function RecipeForm ({fn, e, name, setName, image, setImage, calories, setCalories, servings, setServings, action}) {
+function RecipeForm ({fn, e, name, setName, image, setImage, calories, setCalories, servings, setServings, origin, setOrigin, action}) {
 
     const navigate = useNavigate();
 
@@ -39,6 +39,10 @@ function RecipeForm ({fn, e, name, setName, image, setImage, calories, setCalori
                     required={true}
                     onChange={(e) => setServings(e.target.value)} 
                     />
+                </label>
+                <label>
+                    Origin
+                    <input name="origin" type="text" placeholder="US, FR, AU etc... Or empty" value={origin} onChange={(e) => setOrigin(e.target.value)} />
                 </label>
                 <button type="submit">Save</button>
                 <button type="button" onClick={() => navigate(-1)}>Cancel</button>

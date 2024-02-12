@@ -12,15 +12,13 @@ function ModifyRecipe ({recipeArray, setRecipeArray}) {
     const [image, setImage]= useState(recipeElm.image);
     const [calories, setCalories]= useState(recipeElm.calories);
     const [servings, setServings]= useState(recipeElm.servings);
-
-
-	console.log(recipeElm);
+    const [origin, setOrigin]= useState(recipeElm.origin);
 
 	function generateUuidv4() {
     return "10000000-1000-4000-8000-100000000000".replace(/[018]/g, c =>
           (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)
         );
-      }
+    }
 
 
 	const updateRecipe = (e) => {
@@ -34,6 +32,8 @@ function ModifyRecipe ({recipeArray, setRecipeArray}) {
             calories: calories,
             servings: servings
         }
+
+        origin ? newRecipeObj.origin = origin : null;
 
         const recipeIndex = recipeArray.findIndex(recipes => recipes.id === recipeID)
 
@@ -53,7 +53,7 @@ function ModifyRecipe ({recipeArray, setRecipeArray}) {
 
 	return (
 
-			<RecipeForm fn={updateRecipe} name={name} setName={setName} image={image} setImage={setImage} calories={calories} setCalories={setCalories} servings={servings} setServings={setServings} action="Edit"/>
+			<RecipeForm fn={updateRecipe} name={name} setName={setName} image={image} setImage={setImage} calories={calories} setCalories={setCalories} servings={servings} setServings={setServings} origin={origin} setOrigin={setOrigin} action="Edit"/>
 
 		)
 

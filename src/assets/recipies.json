@@ -5,7 +5,7 @@
       "calories": 400,
       "image": "https://i.imgur.com/eTmWoAN.png",
       "servings": 1,
-      "origin": "it"
+      "origin": "IT"
     },
     {
       "id": "37e0b31d-63f4-4d42-9f4b-e9a0fc464d60",
@@ -27,7 +27,7 @@
       "calories": 500,
       "image": "https://i.imgur.com/93ekwW0.jpg",
       "servings": 1,
-      "origin": "it"
+      "origin": "IT"
     },
     {
       "id": "f4b4d2bc-ff12-4f3f-b3b3-19d2f1682401",    
@@ -42,7 +42,7 @@
       "calories": 750,
       "image": "https://i.imgur.com/ClxOafl.jpg",
       "servings": 1,
-      "origin": "it"
+      "origin": "IT"
     },
     {
       "id": "bca9beec-43d3-48b1-9b57-793a8a8c3520",
@@ -50,7 +50,7 @@
       "calories": 400,
       "image": "https://i.imgur.com/LoG39wK.jpg",
       "servings": 1,
-      "origin": "us"
+      "origin": "US"
     },
     {
       "id": "b777a69a-7f1c-41e8-8a4c-1d0e9e4cace8",
@@ -58,7 +58,7 @@
       "calories": 475,
       "image": "https://i.imgur.com/5ktcSzF.jpg",
       "servings": 1,
-      "origin": "th"
+      "origin": "TH"
     },
     {
       "id": "d087343e-9a92-48c7-8b27-43e37491b6f5",   
@@ -73,7 +73,7 @@
       "calories": 200,
       "image": "https://i.imgur.com/yOlf4Fj.jpg",
       "servings": 1,
-      "origin": "tr"
+      "origin": "TR"
     },
     {
       "id": "0ce7e4d4-1c8a-4e9f-98df-1ecb1e7b8a0b",    
@@ -88,7 +88,7 @@
       "calories": 275,
       "image": "https://i.imgur.com/QqVHdRu.jpg",
       "servings": 1,
-      "origin": "us"
+      "origin": "US"
     },
     {
       "id": "1c6d5b5f-4e72-4136-8c6c-9cf3e3d16a65",

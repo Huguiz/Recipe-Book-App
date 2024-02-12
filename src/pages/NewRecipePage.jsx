@@ -9,6 +9,7 @@ export default function NewRecipePage(props) {
     const [image, setImage]= useState("");
     const [calories, setCalories]= useState(0);
     const [servings, setServings]= useState(1);
+    const [origin, setOrigin]= useState("");
     const navigate = useNavigate();
 
     function generateUuidv4() {
@@ -28,6 +29,9 @@ export default function NewRecipePage(props) {
             calories: calories,
             servings: servings
         }
+
+        origin ? newRecipeObj.origin = origin : null;
+
         const newRecipeArray = [newRecipeObj, ...props.recipeArray]
         props.setRecipeArray(newRecipeArray);
 
@@ -37,6 +41,7 @@ export default function NewRecipePage(props) {
         setImage("");
         setCalories(0);
         setServings(1);
+        setOrigin("");
 
         navigate("/");
 
@@ -44,6 +49,6 @@ export default function NewRecipePage(props) {
 
  
     return(
-        <RecipeForm fn={addRecipe} name={name} setName={setName} image={image} setImage={setImage} calories={calories} setCalories={setCalories} servings={servings} setServings={setServings} action="Add"/>
+        <RecipeForm fn={addRecipe} name={name} setName={setName} image={image} setImage={setImage} calories={calories} setCalories={setCalories} servings={servings} setServings={setServings} origin= {origin} setOrigin={setOrigin} action="Add"/>
     )
 }
