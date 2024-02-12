@@ -2,6 +2,9 @@ import React from "react";
 import '../App.css';
 import { Link } from "react-router-dom";
 
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+
 export default function Recipe(props) {
     function deleteRecipe(recipeID) {
         const newRecipeArray = props.recipeArray.filter((recipe) => {
