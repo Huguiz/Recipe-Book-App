@@ -21,9 +21,10 @@ export default function Recipe(props) {
                     <div className="RecipeBox-Txt">
                         <Link to={`/recipedetail/${element.id}`}>
                             <h2>{element.name}</h2>
-                        </ Link>
+                        </Link>
+                        <button className="RecipeBox-Btn-Delete" onClick={() => deleteRecipe(element.id)}>Delete</button>
                     </div>
-                    <button className="RecipeBox-Btn-Delete" onClick={() => deleteRecipe(element.id)}>Delete</button>
+                    
                 </div>
             )
         })

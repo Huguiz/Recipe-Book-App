@@ -13,6 +13,13 @@ body {
   background-color: #F57530;
 }
 
+h2 {
+  font-weight: 600;
+  color: black;
+  font-size: 1.7em;
+}
+
+
 
 .top {
   position: fixed;
@@ -30,12 +37,12 @@ body {
 
 
 .menuBtn {
-  height: 70%;
+  height: 55%;
   margin-left: 1vw;
   background-color: transparent;
   border-radius: 10px;
-  border: 1px solid #F57530;
-  box-shadow: 3px 3px 5px 1px #9E4039;
+  border: 1px solid #F55331;
+  box-shadow: 2px 2px 5px 1px #9E4039;
 }
 
 .appLogo {
@@ -52,7 +59,7 @@ body {
 
 .Sidebar {
   position: fixed;
-  width: 15%;
+  width: 14%;
   height: 80vh;
   margin-top: 1vh;
   transition: all .5s linear;
@@ -81,9 +88,14 @@ body {
 
 .Content {
   width: 100%;
+  height: 100%;
   min-width: 85%;
   transition: all .25s linear;
-  margin-bottom: 60px;
+  margin: 1vh 0 8vh 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vh;
+  justify-content: center;
 }
 
 .Footer {
@@ -114,14 +126,12 @@ body {
 .RecipeBox {
   align-self: center;
   border: 1px solid #dddddd;
-  margin: 35px auto;
   height: 20vh;
-  width: 70%;
+  flex-basis: 45%;
   background-color: #fffefc;
   box-shadow: 3px 3px 5px 1px #9E4039;
   display: flex;
   border-radius: 10px;
-  padding: 0 30px;
   justify-content: space-around;
   align-items: center;
   overflow: hidden;
@@ -145,26 +155,16 @@ body {
 
 .RecipeBox-Img {
   border-radius: 5px;
-  width: 20%;
-  height: 90%;
+  width: 30%;
 }
 
 .RecipeBox-Txt {
   display: flex;
-  height: 100%;
-  width: 20%;
+  height: 50%;
+  width: 40%;
   flex-direction: column;
   justify-content: center;
-}
-
-.RecipeBox-Txt h2 {
-  font-weight: 600;
-  color: black;
-  font-size: 2em;
-}
-
-.RecipeBox-Txt h2, p{
-  text-align: start;
+  align-items: center;
 }
 
 .RecipeBox-Btn-Delete{
@@ -173,7 +173,7 @@ body {
   border: 0;
   border-radius: 0.5em;
   font-size: 1.2em;
-  padding: 10px;
+  padding: 10px 15px;
 }
 
 .hidden {
@@ -182,7 +182,7 @@ body {
 }
 
 .Content-toggle {
-  padding-left: 15vh;
+  padding-left: 14.5%;
 }
 
 
@@ -233,44 +233,40 @@ body {
 }
 
 .RecipeDetail {
-  align-self: center;
   border: 1px solid #dddddd;
-  margin: 35px auto;
-  height: 50vh;
-  width: 70%;
+  height: 100%;
+  flex-basis: 92%;
+  padding: 3% 0;
   background-color: #fffefc;
   box-shadow: 3px 3px 5px 1px #9E4039;
   display: flex;
   border-radius: 10px;
-  padding: 0 30px;
   align-items: center;
   overflow: hidden;
+  justify-content: space-evenly;
 }
 
 .RecipeDetail img {
-  max-height: 75%;
-  max-width: 50%;
-}
-
-.RecipeDetail h2 {
-  text-align: start;
-  font-size: 1.9em;
-  text-decoration: underline;
+  width: 40%;
+  min-width: 35%;
 }
 
 .RecipeDetail button {
-  margin: auto 120px auto auto;
-  font-size: 1.5em;
-  background-color: rgb(137, 218, 32);
+  margin: 3vh 1vh;
+  font-size: 1.2em;
   border: 0px;
-  padding: 10px;
+  padding: 10px 15px;
   border-radius: 10px;
-  box-shadow: 2px 2px 10px 1px #525252;
+  box-shadow: 2px 2px 10px 1px #eeeeee;
+}
+
+.yellow {
+  background-color: #e6cc00;
 }
 
 .RecipeDetail-Txt {
-  height: 80%;
-  margin: 0 auto 0 30px;
+  margin: 0 10vh;
+  text-align: center;
 }
 
 .AddRecipeBox {

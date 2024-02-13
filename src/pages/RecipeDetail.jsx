@@ -11,17 +11,19 @@ function RecipeDetail (props) {
 			<img src={recipeElm.image} alt="" />
 			<div className="RecipeDetail-Txt">
 				<h2>{recipeElm.name}</h2>
-				<br />
-				<p>Calories : {recipeElm.calories}</p>
-                <p>Servings : {recipeElm.servings}</p>
+				<p>Calories: {recipeElm.calories}</p>
+                <p>Servings: {recipeElm.servings}</p>
 				{recipeElm.origin && <img src={`https://flagsapi.com/${recipeElm.origin}/shiny/64.png`}/>}
+				<div>
+					<Link to={`/modify/${recipeElm.id}`}>
+						<button className="yellow">Edit</button>
+					</Link>
+					<Link to={"/"}>
+						<button>Back</button>
+					</Link>
+				</div>
 			</div>
-			<Link to={`/modify/${recipeElm.id}`}>
-				<button>Edit</button>
-			</Link>
-			<Link to={"/"}>
-				<button>Back</button>
-			</Link>
+
 		</div>
 	)
 }
